@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pamelas Care Mission</title>
+        <link rel="icon" type="image/png" href="images/plogo.png">
+        <link rel="icon" type="image/x-icon" href="images/pfavicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Italianno&display=swap">
+        <script src="https://kit.fontawesome.com/bc34688c63.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <style type="text/css">
+            ::-webkit-scrollbar {
+                width: 0.3em;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(transparent, #2f4156);
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(transparent, #8B9B93);
+            }
+        </style>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/plogo.png" class="logo" width="700" height="auto">
+                    <ul id="sidemenu"> 
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                </div>
+        
+
+            <div class="hero-filmstrip">
+                    <button class="slider-arrow left" onclick="scrollSlider(-1)">&#10094;</button>
+
+                <div class="filmstrip-viewport">
+                    <div class="filmstrip-track">
+                        <img src="images/img1.jpg" alt="Christmas Party 2025">
+                        <img src="images/img2.jpg" alt="Gathering around the table">
+                        <img src="images/img3.jpg" alt="Setting up">
+                        <img src="images/img4.jpg" alt="Setting up">
+                        <img src="images/img6.jpg" alt="Random">
+                        <img src="images/img7.jpg" alt="Cookies">
+                        <img src="images/veterans.jpg" alt="veterans">
+
+                        <img src="images/img1.jpg" alt="Christmas Party 2025">
+                        <img src="images/img2.jpg" alt="Gathering around the table">
+                        <img src="images/img3.jpg" alt="Setting up">
+                        <img src="images/img4.jpg" alt="Setting up">
+                        <img src="images/img6.jpg" alt="Random">
+                        <img src="images/img7.jpg" alt="Cookies">
+                        <img src="images/veterans.jpg" alt="veterans">
+                    </div>
+                </div>
+             
+                <button class="slider-arrow right" onclick="scrollSlider(1)">&#10095;</button>
+
+            </div>
+
+            <div class="container">
+
+                 <div class="header-row">
+                    <div class="header-text">
+                    <h3>A compassionate network <span>supporting adults with disabilities</span><br> and <span>veterans</span> with care, respect, and purpose.</h3>
+                
+            </div>
+
+     <!------           <div class="header-action-photo">
+                            <img src="images/veterans.jpg" alt="Mission Veterans">
+                        </div>
+                    </div>
+                    
+                <div class="header-image">
+                    <img src="images/crossheart.png" alt="Care Mission Symbol">
+
+                    <div class="script-verse">
+                        <p>"And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work"</p>
+                        <span>2 Corinithians 9:8</span> 
+                    </div>
+                </div>
+                </div> ---->
+            </div>
+        </div>
+    <!--------------about------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                <div class="about-col-1">
+                    <img src="images/plogo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Mission</h1>
+                    <h2 class="statement">Founded on community, sustained by community.</h2>
+                    <p>
+                        Pamela's Care Mission was born from a desire to create purpose and connection for adults with 
+                        disabilities. What began as a small effort to empower individuals soon grew into a network where 
+                        disabled adults provide meaningful services to veterans in need. Over time, it has evolved into a 
+                        peer-to-peer community that bridges the gap of loneliness and isolation often experienced by those 
+                        living with disabilities or in challenging circumstances.
+                        <br>
+                        <br> In addition to fostering purpose and community, Pamela’s Care Mission provides food, clothing,
+                        and essential support, helping participants lead fulfilling, engaged lives. At its heart, the organization 
+                        is dedicated to empowering disabled adults, veterans, and the elderly to live with dignity, connection, 
+                        and meaning.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!----------contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>  pamelaakel@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/pamscaremission/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+               
+
+                </div>
+            </div>
+
+        <div class="copyright">
+            <p>Copyright @ Pamela Akel. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwAyd1RCOFNXdaye3m-az-VUpw0uYczVPH3gGPRZLQvKzswfzjpat16nLBd0o0J6BlI/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Submision received!"
+                        form.reset() // added form set further up to work //
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        }, 5000)
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+        </script>
+    </body>
+
+</html>

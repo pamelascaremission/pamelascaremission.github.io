@@ -22,11 +22,14 @@ body {
     background-image: url(images/homepage3.jpg);
     background-size: cover;
     background-position: center;
-}
+} 
 
 .container {
     padding: 35px 10% 10px 10%;
 }
+
+
+
 
 
 .gallery-grid {
@@ -451,7 +454,9 @@ form .btn2 {
     }
 
     .copyright {
-        font-size: 14px
+        font-size: 14px;
+        margin-top: 50px;
+        padding: 20px 10px;
     }
 
     #msg {

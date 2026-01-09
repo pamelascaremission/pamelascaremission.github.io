@@ -16,7 +16,8 @@
         </script>
     </head>
     <body>
-        <style type="text/css">
+    <style type="text/css">
+
             ::-webkit-scrollbar {
                 width: 0.3em;
             }
@@ -28,7 +29,55 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: linear-gradient(transparent, #8B9B93);
             }
-        </style>
+
+
+            #header {
+            height: auto !important;
+            min-height: 100px; /* Adjust based on your logo size */
+            padding-bottom: 20px;
+            }
+     /* 2. Center the entire donation container */
+            #paypal-container-UNF8TEBDCVBKJ {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 0 auto; 
+                width: 100%;
+            }
+
+            /* 3. Control the width of the donation box */
+            #paypal-container-UNF8TEBDCVBKJ > div {
+                width: 100%;
+                max-width: 450px;
+            }
+
+            /* 4. Fix vertical alignment of $ and USD inside the bar */
+            #paypal-container-UNF8TEBDCVBKJ .paypal-button-container,
+            #paypal-container-UNF8TEBDCVBKJ .component-frame {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            /* This forces the labels ($ and USD) and input to align to the middle */
+            #paypal-container-UNF8TEBDCVBKJ label,
+            #paypal-container-UNF8TEBDCVBKJ span {
+                display: inline-flex !important;
+                align-items: center !important;
+                height: 50px !important; /* Matches the bar height */
+                line-height: normal !important;
+                margin: 0 !important;
+                padding: 0 10px !important;
+            }
+
+            #paypal-container-UNF8TEBDCVBKJ input {
+                height: 50px !important;
+                text-align: center;
+                margin: 0 !important;
+            }
+
+    </style>
         <div id="header">
             <div class="container">
                 <nav>
@@ -44,15 +93,16 @@
                     </ul>
                     <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
+            </div>
+        </div>
 
-                </div>
-            
-        <div id="paypal-container-UNF8TEBDCVBKJ"></div>
+        <div id="paypal-container-UNF8TEBDCVBKJ">
             <script>
                 paypal.HostedButtons({
                     hostedButtonId: "UNF8TEBDCVBKJ",
                     }).render("#paypal-container-UNF8TEBDCVBKJ")
         </script>
+        </div>
 
     </body>
     </html>

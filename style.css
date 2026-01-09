@@ -467,5 +467,21 @@ form .btn2 {
         display: block;
     }
 
+    /* Make the donation box slightly narrower for small phones */
+    #paypal-container-UNF8TEBDCVBKJ > div {
+        max-width: 90% !important;
+    }
+
+    /* Adjust the text size so "Donations are accepted below" doesn't wrap weirdly */
+    #paypal-container-UNF8TEBDCVBKJ {
+        font-size: 14px !important;
+    }
+
+    /* Ensure the $ and USD symbols don't overlap the numbers on small screens */
+    #paypal-container-UNF8TEBDCVBKJ input {
+        font-size: 16px !important;
+        padding: 0 40px !important; /* Leaves room for the symbols */
+    }
+
 }
 

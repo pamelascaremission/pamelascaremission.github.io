@@ -61,6 +61,23 @@
                 margin: 0 !important;
                 font-size: 16px !important; /* Better for mobile zoom */
             }
+
+           /* Removes the error messages and the extra spacing they create */
+            #paypal-container-UNF8TEBDCVBKJ .help-message,
+            #paypal-container-UNF8TEBDCVBKJ .p-v-10,
+            #paypal-container-UNF8TEBDCVBKJ [role="alert"] {
+            display: none !important;
+            opacity: 0 !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+            margin: 0 !important;
+    }
+
+    /* Prevents the container from expanding vertically when errors are triggered */
+        #paypal-container-UNF8TEBDCVBKJ {
+            min-height: 250px; /* Adjust this based on your layout */
+            overflow: hidden;
+    }
         </style>
 
         <div id="header">
